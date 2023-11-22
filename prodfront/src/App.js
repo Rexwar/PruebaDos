@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ProductList from './ProductList';
 import ProductModal from './ProductModal'; // Importa el componente modal
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './estilo.css';
+
 
 function App() {
   const [products, setProducts] = useState([]);
