@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+// en routes/api.php
+Route::get('/products', 'ProductController@index');
+Route::post('/products', 'ProductController@store');
+Route::put('/products/{id}', 'ProductController@update');
+Route::delete('/products/{id}', 'ProductController@destroy');
